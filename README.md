@@ -1,4 +1,7 @@
 # Temperature analysis - 2023
 --
 # Introduction 
-In this folder, I work with temperature datasets in 2023 in France. The dataset contains daily temperature (minimum, maximum and average) in different districts in France. In the folder **_district_pays_de_la_loire_**, I work with data in the district of _Pays de la Loire_ 
+In this folder, I work with temperature datasets in 2023 in France. The dataset contains daily temperature (minimum, maximum and average) in different districts in France. <br> In the folder **_district_pays_de_la_loire_**, I work with data in the district of _Pays de la Loire_. <br>
+The dataset comes from this ![website](https://odre.opendatasoft.com/explore/dataset/temperature-quotidienne-regionale/export/?disjunctive.region&q.timerange.date=date:%5B2023-01-01+TO+2023-12-31%5D&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJsaW5lIiwiZnVuYyI6IkFWRyIsInlBeGlzIjoidG1veSIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6IiNmYzhkNjIifSx7InR5cGUiOiJhcmVhcmFuZ2UiLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6InRuIiwic2NpZW50aWZpY0Rpc3BsYXkiOnRydWUsImNvbG9yIjoiIzhkYTBjYiIsImNoYXJ0cyI6W3siZnVuYyI6Ik1JTiIsInlBeGlzIjoidG1pbiJ9LHsiZnVuYyI6Ik1BWCIsInlBeGlzIjoidG1heCJ9XX1dLCJ4QXhpcyI6ImRhdGUiLCJtYXhwb2ludHMiOm51bGwsInRpbWVzY2FsZSI6ImRheSIsInNvcnQiOiIiLCJjb25maWciOnsiZGF0YXNldCI6InRlbXBlcmF0dXJlLXF1b3RpZGllbm5lLXJlZ2lvbmFsZSIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUucmVnaW9uIjp0cnVlLCJxLnRpbWVyYW5nZS5kYXRlIjoiZGF0ZTpbMjAyMy0wMS0wMSBUTyAyMDIzLTEyLTMxXSJ9fX1dLCJ0aW1lc2NhbGUiOiIiLCJzaW5nbGVBeGlzIjp0cnVlLCJkaXNwbGF5TGVnZW5kIjp0cnVlLCJhbGlnbk1vbnRoIjp0cnVlfQ%3D%3D) 
+and I was helped by this ![LinkedIn article](https://www.linkedin.com/pulse/sql-window-functions-rows-range-unbounded-preceding-octavian-zarzu/). 
+

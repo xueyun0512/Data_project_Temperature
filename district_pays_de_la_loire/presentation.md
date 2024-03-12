@@ -1,6 +1,6 @@
 # Temperature analysis 2023 - Pays de la Loire 
 > [!NOTE]
-> This is a self made project, NOT A scientific report
+> This is NOT a scientific report
 
 ## Introduction 
 This a the very first project of the repertory _Temperature analysis_. In this folder, I work with temperature datasets of 2023 in the district of Pays de la Loire. <br> The objectif of this project is to answer some questions one may ask given this dataset and offer a visualisation tool in order to see the global trend of the temperature variation. <br>
@@ -93,4 +93,12 @@ Therefore, if one needs the last day, one may just add _WHERE LastDay =1_
 Visualising the data is a crucial step in the analysis task. Of course, queries are really important in order to understand deeply the dataset. But we do need a dashboard to summarize our analysis and make it straighfoward to anyone not involved in the project to have quickly an idea about the the project. <br>
 Using Power BI, I was able to display the temperature trend and gather all relevant information I found through my SQL queries. 
 
- ![](/district_pays_de_la_loire/tables_sql_created/last_day.PNG)
+ ![](/district_pays_de_la_loire/loire_dashboard.PNG)
+
+## Conclusion
+Through this project, I have learnt how to explore data with SQL queries. It was amazing to dive into the dataset and use multiple functions to extract the information I was looking for. Building a Power BI dashboard was also extremely satisfying! I do appreciate customize every single detail! <br>
+
+I hope this little project has been enjoyable for you as it was for me! 
+Thank you for reading it and have a good day ;)
+
+Olivia 

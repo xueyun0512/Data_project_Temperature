@@ -28,7 +28,7 @@ Using Excel, I extracted the working data from the raw dataset and grap the temp
   <img src="pizza_image.jpg" width="300"/>
 </p>
 
-Since I was interested by the data of the district Pays de la Loire. I created a new table **_loire_**. For the rest of the project, I will use this new table.
+Since I was interested by the data of the district Pays de la Loire. I created a new table **_loire_**. For the rest of the project, I will use this new table. Moreover, the temperatures are given in decimal. We convert them into integers using the function _ROUND()_ to make it easier to interpret. 
 
 ```ruby
 SELECT *

@@ -28,9 +28,8 @@ I extracted the working data from the raw dataset and grap the temeprature of 20
 The next thing to to is analysing this data with SQL and answer interesting questions!
 
 ## 3) TOP 5 coldest VS TOP 5 hottest months
-<p align="center">
-  <img src="top5_coldest.PNG" width="300"/>
-</p>
+
+
 
 
 

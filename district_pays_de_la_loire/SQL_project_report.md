@@ -26,7 +26,7 @@ The data comes from [here](https://odre.opendatasoft.com/explore/dataset/tempera
 ## 2) Preprocessing: clean, filter, adjust the raw dataset
 Using Excel, I extracted the working data from the raw dataset and grap the temperature of 2023. I also added useful columns: Year, Month and Day columns. This completed, I was ready to treat my data with SQL. 
 <p align="center">
-  <img src="pizza_image.jpg" width="300"/>
+  <img src="/district_pays_de_la_loire/tables_sql_created/view_data_excel.PNG" width="800"/>
 </p>
 
 Since I was interested by the data of the district Pays de la Loire. I created a new table **_loire_**. For the rest of the project, I will use this new table. Moreover, the temperatures are given in decimal. We convert them into integers using the function _ROUND()_ to make it easier to interpret. 

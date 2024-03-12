@@ -28,6 +28,7 @@ I extracted the working data from the raw dataset and grap the temeprature of 20
 The next thing to to is analysing this data with SQL and answer interesting questions!
 
 ## 3) TOP 5 coldest VS TOP 5 hottest months
+![this screenshot](/district_pays_de_la_loire/tables_sql_created/top5_coldest.PNG)
 
 
 

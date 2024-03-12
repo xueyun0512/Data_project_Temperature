@@ -23,10 +23,19 @@ This a the very first project of the repertory _Temperature analysis_. In this f
 The data comes from [here](https://odre.opendatasoft.com/explore/dataset/temperature-quotidienne-regionale/information/?disjunctive.region) and show the daily temperature (in °C) from 2016 to nowadays in different districts in France. There are 3 types categories of temperature: the maximum _(Tmax)_, the minimum _(Tmin)_, and the average _(Tavg)_. <br>
 
 ## 2) Preprocessing: clean, filter, adjust the raw dataset
-I extracted the working data from the raw dataset and grap the temeprature of 2023 in the district of Pays de la Loire. Before analysis it, I added useful columns: Year, Month and Day columns. After this step, the data looks like:
+Using Excel, I extracted the working data from the raw dataset and grap the temperature of 2023. I also added useful columns: Year, Month and Day columns. This completed, I was ready to treat my data with SQL. 
 <p align="center">
   <img src="pizza_image.jpg" width="300"/>
 </p>
+
+Since I was interested by the data of the district Pays de la Loire. I created a new table **_loire_**. For the rest of the project, I will use this new table.
+
+```ruby
+SELECT *
+INTO loire
+FROM temperature
+WHERE District = 'Pays de la Loire';
+```
 The next thing to to is analysing this data with SQL and answer interesting questions!
 
 ## 3) TOP 5 coldest VS TOP 5 hottest months
@@ -40,11 +49,16 @@ TOP 5 Coldest Months        | TOP 5 Hottest Months
 As the maximum and the minimum daily temperatures are given, one may ask what is the biggest temperature with a day. The variation is know as the difference between the highest and the lowest : _δT = Tmax - Tmin_ <br>
 Using the following code: 
 ```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+SELECT Month, MAX(Tmax-Tmin) AS Temperature_Variation
+FROM loire 
+GROUP BY Month
+ORDER BY Temperature_Variation DESC;
 ```
+The biggest temperature variation is δT = 20°C and occured in July. This resulat is not surprising as the temperature is higher in summer so the difference should also be high. 
 
+## 5) The average temperature grouping by season
+
+There is temperature data for all months of the year. It could be interested to group by them in season. 
 
 
  

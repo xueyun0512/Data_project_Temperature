@@ -93,7 +93,9 @@ Therefore, if one needs the last day, one may just add _WHERE LastDay =1_
 Visualising the data is a crucial step in the analysis task. Of course, queries are really important in order to understand deeply the dataset. But we do need a dashboard to summarize our analysis and make it straighfoward to anyone not involved in the project to have quickly an idea about the the project. <br>
 Using Power BI, I was able to display the temperature trend and gather all relevant information I found through my SQL queries. 
 
- ![](/district_pays_de_la_loire/dashboard_powerbi.PNG)
+<p align="center">
+  <img src="/district_pays_de_la_loire/dashboard_powerbi.PNG" width="700"/>
+</p>
 
 ## Conclusion
 Through this project, I have learnt how to explore data with SQL queries. It was amazing to dive into the dataset and use multiple functions to extract the information I was looking for. Building a Power BI dashboard was also extremely satisfying! I do appreciate customize every single detail! <br>

@@ -26,7 +26,7 @@ The data comes from [here](https://odre.opendatasoft.com/explore/dataset/tempera
 ## 2) Preprocessing: clean, filter, adjust the raw dataset
 Using Excel, I extracted the working data from the raw dataset and grap the temperature of 2023. I also added useful columns: Year, Month and Day columns. This completed, I was ready to treat my data with SQL. 
 <p align="center">
-  <img src="/district_pays_de_la_loire/tables_sql_created/view_data_excel.PNG" width="800"/>
+  <img src="/SQL_PowerBI_analysis/tables_sql_created/view_data_excel.PNG" width="800"/>
 </p>
 
 Since I was interested by the data of the district Pays de la Loire. I created a new table **_loire_**. For the rest of the project, I will use this new table. Moreover, the temperatures are given in decimal. We convert them into integers using the function _ROUND()_ to make it easier to interpret. 
@@ -50,7 +50,7 @@ ORDER BY Top5_coldest_months ;
 The code is the same for the hottest months but we add _DESC_ at the end. This returns us the two following tables:
 TOP 5 Coldest Months        | TOP 5 Hottest Months  
 :------------: |:-------------:
-![](/district_pays_de_la_loire/tables_sql_created/top5_coldest.PNG) | ![](/district_pays_de_la_loire/tables_sql_created/top5_hottest.PNG)
+![](/SQL_PowerBI_analysis/tables_sql_created/top5_coldest.PNG) | ![](/SQL_PowerBI_analysis/tables_sql_created/top5_hottest.PNG)
 
 ## 4) Biggest temperature variation in a day for each month
 As the maximum and the minimum daily temperatures are given, one may ask what is the biggest temperature with a day. The variation is know as the difference between the highest and the lowest : _δT = Tmax - Tmin_ <br>
@@ -72,7 +72,7 @@ There is temperature data for all months of the year. It could be interested to 
 ```
 Now, the temperature per season can be seen:<br>
 
-![](/district_pays_de_la_loire/tables_sql_created/temperature_season.PNG)
+![](/SQL_PowerBI_analysis/tables_sql_created/temperature_season.PNG)
 
 ## 6) How to get the last day of each month?
 One may also want to know which day is the last day for each month. Every month does not end with the same day_number. It could be 30, 31 or even 28 or 29 for the month of February! But no worries. We counteract this issue using the functions _ROW_NUMBER()_ and  _OVER(PARTITION BY   ORDER BY)_. Given a year and a month, the following SQL query will create a _LastDay_ column which is 1 for the last day, 2 for the penultimate last day and so on. 
@@ -85,7 +85,7 @@ FROM loire;
 ```
 For instance, the table regarding the month of March is:
 
- ![](/district_pays_de_la_loire/tables_sql_created/last_day.PNG)
+ ![](/SQL_PowerBI_analysis/tables_sql_created/last_day.PNG)
 
 Therefore, if one needs the last day, one may just add _WHERE LastDay =1_
 
@@ -94,7 +94,7 @@ Visualising the data is a crucial step in the analysis task. Of course, queries 
 Using Power BI, I was able to display the temperature trend and gather all relevant information I found through my SQL queries. 
 
 <p align="center">
-  <img src="/district_pays_de_la_loire/dashboard_powerbi.PNG" width="700"/>
+  <img src="/SQL_PowerBI_analysis/dashboard_powerbi.PNG" width="700"/>
 </p>
 
 ## Conclusion

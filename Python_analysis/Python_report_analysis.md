@@ -60,6 +60,12 @@ Winter is coming and poeple should be careful about the brute temperature variat
 As we are given the daily temperature, it could be fun to study how the temeprature changes. This can be really helpful in order to know when people have to be cautious about a sudden temperature variation. I defined the temperature rate as: $\delta T = T_{day,d+1}-T_{day,d}$. <br>
 First, I defined a column _Prev_temperature_ using the function **_LAG_** in SQL. Then, I added a second column as _Prev_temperature - Tavg_. 
 
+```ruby
+SELECT Date, LAG(Tavg) OVER (ORDER BY Date) AS prev_temperature
+INTO temp_change_rate
+FROM loire;
+```
+
 The folliwing picture show the temperature variation rate for the districts of Corse and Bretagne. One can mitice that in Bretagne, the temperature can increase or decrease dratiscally from a day to the next: the variation could reach 6°C. As Bretagne has one of the coldest weather in France, this resultat is not surprising. <br> The temeprature variation rate in Corse is a bit lower than the previous district. The maximum variation is less than 5°C. 
 Therefore, no matter if the weather is cold or not, the temperature variation rate is in the same range.
 
@@ -68,11 +74,20 @@ Therefore, no matter if the weather is cold or not, the temperature variation ra
 </p>
 
 <h1 align="center">Bretagne</h1>
+
 ![](/Python_analysis/plots/['Bretagne']_python.png)
 
+
 <h1 align="center">Corse</h1>
+
 ![](/Python_analysis/plots/['Corse']_python.png)
 
 ## 5) Conclusion
 This temperature analysis shows us how is the temeprature evolution in several French districts. Some areas are facing high temperature constantly during the year (eg Corse) while other districts does not (eg Bretagne). However, the temeprature variation rate from day D to day D+1 is approximately the same for every district, around 5°C. <br>
-Through this project, I have learnt how to use Python librairies (_pandas_ and _matplotlib_ especially) for Data analysis. 
+
+Through this project, I have learnt how to use Python librairies (_pandas_ and _matplotlib_ especially) and SQL advanced functions in order to carry out a data project. In addition, I was really glad to be able to answer questions I was wondering about. 
+
+Thank you for reading this report!
+
+Have a nice day ;)
+Olivia 

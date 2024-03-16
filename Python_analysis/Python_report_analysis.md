@@ -1,5 +1,10 @@
 # Python - Temperature analysis 2023
 
+<table align="center"><tr>
+<td> <img src="/Python_analysis/plots/france_district.png" alt="Drawing" style="width: 250px;"/> </td>
+<td> <img src="/Python_analysis/plots/logo.jpg" alt="Drawing" style="width: 250px;"/> </td>
+</tr></table>
+
 ## Introduction
 In this second project, I worked with Python in order to analyse the temperature evolution of 2023 for all the districts in France.  <br> 
 The Jupyter Notebook I wrote could be found in the same folder.

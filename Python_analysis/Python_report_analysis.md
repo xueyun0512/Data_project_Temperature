@@ -58,4 +58,13 @@ Winter is coming and poeple should be careful about the brute temperature variat
 </p>
 
 ## 4) How is the temperature increasing?
-As we are given the daily temperature, it could be fun to stuty how the temeprature changes. This can be really helpful in order to know when people have to be cautious about a sudden temperature variation. 
+As we are given the daily temperature, it could be fun to study how the temeprature changes. This can be really helpful in order to know when people have to be cautious about a sudden temperature variation. 
+
+The folliwing picture show the temperature variation rate for the districts of Corse and Bretagne. One can mitice that in Bretagne, the temperature can increase or decrease dratiscally from a day to the next: the variation could reach 6°C. As Bretagne has one of the coldest weather in France, this resultat is not surprising. <br>. At the opposite, the temeprature variation rate in Corse is lower than the previous district. The maximum variation is less than 4°C. 
+<p align="center">
+  <img src="/Python_analysis/plots/corse_bretagne_python.png" width="800"/>
+</p>
+
+
+![](/Python_analysis/plots/['Bretagne']_python.png)
+![](/Python_analysis/plots/['Corse']_python.png)

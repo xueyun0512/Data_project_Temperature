@@ -89,5 +89,5 @@ Through this project, I have learnt how to use Python librairies (_pandas_ and _
 
 Thank you for reading this report!
 
-Have a nice day ;)
+Have a nice day ;) <br>
 Olivia 

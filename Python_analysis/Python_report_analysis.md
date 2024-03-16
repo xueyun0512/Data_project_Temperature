@@ -1,4 +1,4 @@
-# Python - Temperature analysis 2023
+# Python & SQL - Temperature analysis 2023
 
 <table align="center"><tr>
 <td> <img src="/Python_analysis/plots/france_district.png" alt="Drawing" style="width: 250px;"/> </td>

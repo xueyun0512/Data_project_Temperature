@@ -21,7 +21,7 @@ The Jupyter Notebook I wrote could be found in the same folder.
 5) Conclusion
 
 ## 1) Input data 
-The data comes from [here](https://odre.opendatasoft.com/explore/dataset/temperature-quotidienne-regionale/information/?disjunctive.region) and show the daily temperature (in °C) of 2023 in different districts in France. There are 3 types categories of temperature: the maximum _(Tmax)_, the minimum _(Tmin)_, and the average _(Tavg)_. <br>I've created an additional column _Temperature difference_ in order to visualize how the temperature increases. 
+The data comes from [RTE](https://odre.opendatasoft.com/explore/dataset/temperature-quotidienne-regionale/information/?disjunctive.region),the well_known electricity distributor in France. It shows the daily temperature (in °C) of 2023 in different districts in France. There are 3 types categories of temperature: the maximum _(Tmax)_, the minimum _(Tmin)_, and the average _(Tavg)_. <br>I've created an additional column _Temperature difference_ in order to visualize how the temperature increases. 
 
 ## 2) Evolution of the minimum, maximum and average temperatures of the district Pays de la Loire
 Given the dataset, it may be interesting to plot and look at the difference between the minimum, the maximum and the average temperature. I was especially curious about the district of Pays de la Loire so I only plotted from it. I got the figure below: 
